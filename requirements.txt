@@ -1,4 +1,4 @@
-urllib3
+urllib3==1.26.15
 opencv-python-headless
 cmake
 dlib
