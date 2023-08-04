@@ -1,7 +1,8 @@
-opencv-python-headless==4.5.3.56
-cmake==3.21.3
-face_recognition @ git+https://github.com/thetoby9944/face_recognition
-fastapi==0.68.1
+opencv-python-headless
+cmake
+dlib
+face_recognition
+fastapi
 uvicorn==0.15.0
-nest-asyncio==1.5.1
+nest-asyncio
 requests
