@@ -4,4 +4,4 @@ face_recognition @ git+https://github.com/thetoby9944/face_recognition
 fastapi==0.68.1
 uvicorn==0.15.0
 nest-asyncio==1.5.1
-deta
+requests
