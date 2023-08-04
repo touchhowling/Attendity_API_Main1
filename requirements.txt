@@ -1,3 +1,4 @@
+urllib3
 opencv-python-headless
 cmake
 dlib
