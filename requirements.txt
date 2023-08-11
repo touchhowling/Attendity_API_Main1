@@ -1,7 +1,6 @@
 urllib3==1.26.15
 opencv-python-headless
 cmake
-dlib
 face_recognition
 fastapi
 uvicorn==0.15.0
