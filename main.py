@@ -148,7 +148,10 @@ def getFaceData(video_url:str,search_class:str):
     return { "people_identified":people_identified,"data": people_data}
 
 def convert_url(txt):
-    txt=txt[::-1]
+    if txt[-4]=='h':
+	    txt=txt[-11::-1]
+    else:
+        txt=txt[::-1]
     x = txt.replace("/", "F2%",2 )
     x=x[::-1]
     return x
@@ -157,6 +160,7 @@ app = FastAPI()
 @app.get("/")
 def get_video(video_url: str = '',search_class: str = ''):
     video_url=convert_url(video_url)
+    print(video_url)
     data = getFaceData(video_url,search_class)
     json_str = json.dumps(data, indent=4, default=str)
     return Response(content=json_str, media_type='application/json')
