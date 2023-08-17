@@ -166,6 +166,6 @@ def get_video(video_url: str = '',search_class: str = ''):
     return Response(content=json_str, media_type='application/json')
 
 nest_asyncio.apply()
-uvicorn.run(app,host=0.0.0.0, port=8000)
+uvicorn.run(app,host='0.0.0.0', port=8000)
 
 #sF7QMWz4_6hBHqPNzbBcgVWccWxiusiyqpFbFywoN
